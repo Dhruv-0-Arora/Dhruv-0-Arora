@@ -1,7 +1,7 @@
-- 👋 Hi, I’m @Dhruv-0-Arora; I am 15 years old
+- 👋 Hi, I’m @Dhruv-0-Arora; I am 16 years old
 - 👀 I’m fluent in java, & javascript
-- 🌱 I am familiar with flutter, & python
-- 📫 How to reach me dhruvarora202520@gmail.com
+- 🌱 I am familiar with flutter, python, & C++
+- 📫 Reach me at dhruvarora202520@gmail.com
 
 <!---
 Dhruv-0-Arora/Dhruv-0-Arora is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
