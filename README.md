@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Dhruv-0-Arora; I am 16 years old
-- 👀 I’m fluent in java, & javascript
-- 🌱 I am familiar with flutter, python, & C++
+- 👀 I’m fluent in java, javascript, C++, and python
+- 🌱 I am familiar with flutter, HTML, and CSS
 - 📫 Reach me at dhruvarora202520@gmail.com
 
 <!---
