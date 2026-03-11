@@ -2,18 +2,18 @@
                                        ccxfnOzXCQOdm0CJYvjfj                                        
                                     kpmOYYJ0JC0Zphkabw0CQOQnXJ                                      
                                    kdwpdwmk*hdZwhbZohbwmOddZZpd                                     
-                                 aMadpbkbo*hhhbbZkhMBWB#pwwQnXOXZ                                   
-                                #ahaoaoabko#*M*dhaoM*aoMBo##adCvOZ                                  
-                               W#kphoao*paoaaha#*#MW*hkh#ho#MBhz0Q                                  
-                               W#kaMM***dkhWB$MhoWWM#W#doM#WB#mnOv                                  
-                               M$$$$W#WWMMBWMhmrjOh###*ohahboawOJJX                                 
-                               h#$@@@BM#W$Mown[+-(fcZaMWW#*k#BMdCwmp                                
+                                 aMadpbkbo*hhhbbZkhMBWB#pwwQnXOXZ                                   darora1@arch ------------------------------------------------------------
+                                #ahaoaoabko#*M*dhaoM*aoMBo##adCvOZ                                  • OS: ....................................... MacOS, Arch Linux + i3, IOS
+                               W#kphoao*paoaaha#*#MW*hkh#ho#MBhz0Q                                  • Host: ........................................................ Autodesk
+                               W#kaMM***dkhWB$MhoWWM#W#doM#WB#mnOv                                  • Kernel: ............................ UW-Madison Computer Science & Math
+                               M$$$$W#WWMMBWMhmrjOh###*ohahboawOJJX                                 • IDE: ........................................................... Neovim
+                               h#$@@@BM#W$Mown[+-(fcZaMWW#*k#BMdCwmp                                • Timezone: ....................................................... UTC-6
                                aB$$@@MdZZMBMar[_-[1|rcJd*bmOk#BWdOO                                 
-                                BWW$*#h##W$$BhY1-1zdohwO0J|[Z#BWBap                                 
-                                MB$McxYvxxvYZmZ|>_fX0Qct({_>>}OM*w                                  
-                                 WBo|(rOwZpbYCz{!<[frcz(t(_il]Xbw                                   
-                                 *W#|[[]}))1}[}+l!ii>~~<>!lll~tz}i                                  
-                                 ]-Y)[_>!!!i>+_>lIli!lIIIIlll>~i}r{                                 
+                                BWW$*#h##W$$BhY1-1zdohwO0J|[Z#BWBap                                 • Languages.Programming: ........ Rust, C, Typescript, C++, Java, Python,
+                                MB$McxYvxxvYZmZ|>_fX0Qct({_>>}OM*w                                                                     Dart, Lua
+                                 WBo|(rOwZpbYCz{!<[frcz(t(_il]Xbw                                   • Languages.Markup: ........ HTML, CSS, Markdown, JSON, LaTeX, YAML, TOML
+                                 *W#|[[]}))1}[}+l!ii>~~<>!lll~tz}i                                  • Languages.Tools: ...... Git, Docker, React, Pytorch, Tensorflow, NodeJS,
+                                 ]-Y)[_>!!!i>+_>lIli!lIIIIlll>~i}r{                                                           Express, SQL, AWS, Flutter, Firebase, Bash
                                 cctt/[+>ii>~[~+<>ii!-{<!lIll!!+]l~[                                 
                                  []f{}]-_-[(|vwQnjn/-}[~<>i!!!i[>!i                                 
                                  ~~][(1)([}([]{trf}+~]-___~>!iill!                                  
