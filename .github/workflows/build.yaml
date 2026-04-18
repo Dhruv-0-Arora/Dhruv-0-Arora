@@ -1,0 +1,48 @@
+name: README build
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Daily at 04:00 UTC.
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: 'stable'
+          cache: true
+
+      - name: Run tests
+        run: go test ./...
+
+      - name: Update SVGs
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          USER_NAME:    ${{ secrets.USER_NAME }}
+        run: go run ./cmd/today
+
+      - name: Commit changes
+        run: |
+          git config --global user.email "github-actions-bot@users.noreply.github.com"
+          git config --global user.name  "github-actions[bot]"
+          git add dark_mode.svg light_mode.svg cache/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update README stats"
+            git push
+          fi
