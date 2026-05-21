@@ -28,10 +28,10 @@ func Me() svg.Profile {
 		LangsProgram:  "Go, Rust, Python, C++, TypeScript",
 		LangsMarkup:   "HTML, CSS, JSON, LaTeX, YAML",
 		LangsReal:     "English, Hindi",
-		HobbiesSW:     "Systems programming, dotfiles tinkering",
-		HobbiesHW:     "Mechanical keyboards, custom PC builds",
-		EmailPersonal: "you@example.com",
-		LinkedIn:      "Dhruv-0-Arora",
+		HobbiesSW:     "Systems programming",
+		HobbiesHW:     "Mech keyboards, Audio Engineering",
+		EmailPersonal: "a_dhruv@outlook.com",
+		LinkedIn:      "Dhruv0Arora",
 		GitHub:        "Dhruv-0-Arora",
 	}
 }

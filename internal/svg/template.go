@@ -26,28 +26,29 @@ type Theme struct {
 	CCFill         string // "consolas comment" / dot-leader color
 }
 
-// Dark matches Andrew6rant's dark palette (GitHub dark theme tokens).
+// nord theme
 var Dark = Theme{
 	Name:           "dark",
-	BackgroundFill: "#161b22",
-	TextFill:       "#c9d1d9",
-	KeyFill:        "#ffa657",
-	ValueFill:      "#a5d6ff",
-	AddFill:        "#3fb950",
-	DelFill:        "#f85149",
-	CCFill:         "#616e7f",
+	BackgroundFill: "#2e3440", // nord0  - Polar Night (darkest)
+	TextFill:       "#d8dee9", // nord4  - Snow Storm
+	KeyFill:        "#8fbcbb", // nord12 - green
+	ValueFill:      "#81a1c1", // nord8  - blue
+	AddFill:        "#a3be8c", // nord14 - Aurora green
+	DelFill:        "#bf616a", // nord11 - Aurora red
+	CCFill:         "#4c566a", // nord3  - Polar Night (lightest)
 }
 
-// Light matches the GitHub light palette.
+// Light uses the Nord palette on a Snow Storm background.
+// See https://www.nordtheme.com/.
 var Light = Theme{
 	Name:           "light",
-	BackgroundFill: "#f6f8fa",
-	TextFill:       "#24292f",
-	KeyFill:        "#953800",
-	ValueFill:      "#0a3069",
-	AddFill:        "#1a7f37",
-	DelFill:        "#cf222e",
-	CCFill:         "#c2cfde",
+	BackgroundFill: "#eceff4", // nord6  - Snow Storm (lightest)
+	TextFill:       "#2e3440", // nord0  - Polar Night
+	KeyFill:        "#8fbcbb", // nord12 - Aurora orange
+	ValueFill:      "#81a1c1", // darker blue
+	AddFill:        "#a3be8c", // nord14 - Aurora green
+	DelFill:        "#bf616a", // nord11 - Aurora red
+	CCFill:         "#d8dee9", // nord4  - Snow Storm (subtle on light bg)
 }
 
 // Profile is the static info baked into the right-hand panel.
@@ -70,9 +71,9 @@ type Profile struct {
 }
 
 const (
-	canvasW = 1000
+	canvasW = 1200
 	canvasH = 600
-	asciiX  = 15
+	asciiX  = 0
 	infoX   = 540
 	rowH    = 20
 	firstY  = 30
@@ -237,7 +238,7 @@ func writeBlank(b *strings.Builder, x, y int) int {
 // The rewrite step will recompute these for dynamic rows; this is
 // only the static initial padding.
 func defaultDots(key, value string) string {
-	const targetWidth = 50
+	const targetWidth = 60
 	used := len(key) + 2 /* ": " */ + len(value)
 	pad := targetWidth - used
 	if pad < 2 {
