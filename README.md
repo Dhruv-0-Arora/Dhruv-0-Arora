@@ -1,1 +1,6 @@
-<img width="709" height="422" alt="Screenshot 2026-03-11 at 3 24 06 PM" src="https://github.com/user-attachments/assets/a6c63007-33f1-4350-9800-e39ae169805c" />
+<a href="https://github.com/Dhruv-0-Arora/Dhruv-0-Arora">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Dhruv-0-Arora/Dhruv-0-Arora/main/dark_mode.svg">
+    <img alt="Dhruv Arora's GitHub Profile README" src="https://raw.githubusercontent.com/Dhruv-0-Arora/Dhruv-0-Arora/main/light_mode.svg">
+  </picture>
+</a>

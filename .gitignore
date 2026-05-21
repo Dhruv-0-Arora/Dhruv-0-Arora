@@ -1,0 +1,10 @@
+# Go build artifacts
+/dhruv-0-arora
+*.exe
+*.test
+*.out
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
