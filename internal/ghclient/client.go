@@ -271,13 +271,12 @@ type RepoLOC struct {
 // Returns a zero RepoLOC if the repo has no default branch.
 func (c *Client) RepoLOCForUser(ctx context.Context, owner, repo, userID string) (RepoLOC, error) {
 	const q = `
-query($owner:String!, $repo:String!, $cursor:String){
+query($owner:String!, $repo:String!, $cursor:String, $author:ID!){
   repository(owner:$owner, name:$repo){
     defaultBranchRef{ target{ ... on Commit {
-      history(first:100, after:$cursor){
+      history(first:100, after:$cursor, author:{id:$author}){
         edges{ node{ ... on Commit {
           additions deletions
-          author{ user{ id } }
         } } }
         pageInfo{ endCursor hasNextPage }
       }
@@ -296,11 +295,6 @@ query($owner:String!, $repo:String!, $cursor:String){
 								Node struct {
 									Additions int `json:"additions"`
 									Deletions int `json:"deletions"`
-									Author    struct {
-										User *struct {
-											ID string `json:"id"`
-										} `json:"user"`
-									} `json:"author"`
 								} `json:"node"`
 							} `json:"edges"`
 							PageInfo struct {
@@ -312,7 +306,7 @@ query($owner:String!, $repo:String!, $cursor:String){
 				} `json:"defaultBranchRef"`
 			} `json:"repository"`
 		}
-		vars := map[string]any{"owner": owner, "repo": repo, "cursor": cursor}
+		vars := map[string]any{"owner": owner, "repo": repo, "cursor": cursor, "author": userID}
 		if err := c.post(ctx, "RepoLOCForUser", q, vars, &resp); err != nil {
 			return RepoLOC{}, err
 		}
@@ -321,11 +315,9 @@ query($owner:String!, $repo:String!, $cursor:String){
 		}
 		hist := resp.Repository.DefaultBranchRef.Target.History
 		for _, e := range hist.Edges {
-			if e.Node.Author.User != nil && e.Node.Author.User.ID == userID {
-				out.MyCommits++
-				out.Additions += e.Node.Additions
-				out.Deletions += e.Node.Deletions
-			}
+			out.MyCommits++
+			out.Additions += e.Node.Additions
+			out.Deletions += e.Node.Deletions
 		}
 		if !hist.PageInfo.HasNextPage {
 			return out, nil
