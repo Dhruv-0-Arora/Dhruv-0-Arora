@@ -48,10 +48,8 @@ func (d Diff) String() string {
 	if d.Months == 0 && d.Days == 0 {
 		cake = " 🎂"
 	}
-	return fmt.Sprintf("%d %s, %d %s, %d %s%s",
+	return fmt.Sprintf("%d %s%s",
 		d.Years, plural("year", d.Years),
-		d.Months, plural("month", d.Months),
-		d.Days, plural("day", d.Days),
 		cake,
 	)
 }

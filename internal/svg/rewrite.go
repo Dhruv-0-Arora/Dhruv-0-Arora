@@ -40,7 +40,7 @@ func Rewrite(path string, s Stats) error {
 	}
 	loc := s.LOCAdd - s.LOCDel
 	fields := []field{
-		{"age_data", s.Age, 0},
+		{"age_data", s.Age, 52},
 		{"repo_data", commaInt(s.Repos), 6},
 		{"contrib_data", commaInt(s.Contrib), 0},
 		{"star_data", commaInt(s.Stars), 14},

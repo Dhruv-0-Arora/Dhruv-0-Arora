@@ -11,7 +11,7 @@ import (
 
 // Birthday is used for the "Uptime" line (years, months, days alive).
 // Set to your real DOB at midnight UTC.
-var Birthday = time.Date(2003, time.January, 1, 0, 0, 0, 0, time.UTC)
+var Birthday = time.Date(2007, time.January, 1, 0, 0, 0, 0, time.UTC)
 
 // Login is the GitHub username used for all queries.
 const Login = "Dhruv-0-Arora"

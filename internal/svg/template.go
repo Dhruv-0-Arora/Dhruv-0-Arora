@@ -127,7 +127,7 @@ size-adjust: 109%;
 
 	// System block
 	y = writeKV(&b, infoX, y, "OS", p.OS, "", "")
-	y = writeKV(&b, infoX, y, "Uptime", "1 year, 0 months, 0 days", "age_data", "age_data_dots")
+	y = writeKV(&b, infoX, y, "Uptime", "N years", "age_data", "age_data_dots")
 	y = writeKV(&b, infoX, y, "Host", p.Host, "", "")
 	y = writeKV(&b, infoX, y, "Kernel", p.Kernel, "", "")
 	y = writeKV(&b, infoX, y, "IDE", p.IDE, "", "")
